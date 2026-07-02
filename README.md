@@ -1,6 +1,6 @@
 # HR Employee Attrition Analysis — Excel Dashboard
 
-An Excel-based analysis of employee attrition drivers — department, salary band, performance, and tenure — built with PivotTables, slicers, and a dashboard.
+An Excel-based analysis of employee attrition drivers department, salary band, performance, and tenure — built with PivotTables, slicers, and a dashboard.
 
 **Author:** Patricia Fagbola | Data Analyst | 2026
 **Tools:** Microsoft Excel (PivotTables, PivotCharts, Slicers)
