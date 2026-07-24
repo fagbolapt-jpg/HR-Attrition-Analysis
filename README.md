@@ -1,72 +1,153 @@
 # HR Employee Attrition Analysis — Excel Dashboard
 
-An Excel-based analysis of employee attrition drivers department, salary band, performance, and tenure — built with PivotTables, slicers, and a dashboard.
+## Project Overview
+
+This project explores employee attrition using Microsoft Excel to identify the workforce characteristics associated with higher turnover. Using PivotTables, PivotCharts, and interactive slicers, the analysis examines how attrition varies across departments, salary bands, tenure groups, performance ratings, and demographic factors.
+
+The objective was to transform raw HR data into an interactive dashboard that enables HR teams to quickly identify attrition trends and make more informed retention decisions.
 
 **Author:** Patricia Fagbola | Data Analyst | 2026
+
 **Tools:** Microsoft Excel (PivotTables, PivotCharts, Slicers)
 
 ---
 
-![Dashboard preview](images/dashboard_preview.png)
+## Dashboard Preview
 
-## Dataset
+![Dashboard Preview](images/dashboard_preview.png)
 
-- **1,470** employees
-- **35** attributes per employee, including Department, Job Role, Monthly Income, Performance Rating, Job Satisfaction, Marital Status, and Tenure fields
-- Target variable: **Attrition** (Yes/No)
+---
 
-## Business Problem
+# Dataset
 
-Employee turnover is costly, but not evenly distributed across the business. This analysis breaks down attrition by department, compensation band, and performance to identify where the business is losing people and why — so retention efforts can be targeted rather than blanket.
+The dataset contains HR information for **1,470 employees** with **35 attributes** describing employee demographics, job characteristics, compensation, performance, and employment history.
 
-## Headline Numbers
+Key fields include:
 
-- **1,470** total employees
-- **237** left the company — a **16.1%** attrition rate
-- **Sales** — highest attrition among departments
-- **Research & Development** — lowest attrition, strongest retention
+- Department
+- Job Role
+- Monthly Income
+- Performance Rating
+- Job Satisfaction
+- Marital Status
+- Years at Company
+- Attrition (Yes/No)
 
-## Key Insights
+The target variable analysed throughout the project is **Employee Attrition**.
 
-- **Sales has the highest attrition rate**, while Research & Development shows the lowest — indicating notably stronger employee retention within R&D
-- **Lower salary band employees churn more** — attrition is consistently higher in the lower compensation band, suggesting pay is a meaningful driver of turnover
-- **Sales also pays the most on average** — despite the highest attrition, Sales has the highest average monthly income of any department, pointing to attrition drivers beyond pay alone (e.g. role pressure, targets, work-life balance)
-- **Lower performers earn more than expected** — employees with lower performance ratings have slightly higher average income than average/high performers; this is largely explained by tenure, since longer-serving employees earn more regardless of current performance
-- **Marital status doesn't move performance** — performance ratings are consistent across Married, Single, and Divorced employees, ruling it out as a meaningful factor
-- **Tenure band affects both pay and attrition risk** — "New" employees earn the least and pivot data shows meaningfully different attrition distribution across New/Mid/Experienced tenure groups
+---
 
-## Recommendations
+# Business Problem
 
-1. **Investigate Sales attrition specifically** — since pay isn't the gap, look at workload, quota pressure, management, or role fit within Sales
-2. **Review compensation at the lower salary band** — the clearest quantifiable link to attrition in the data; targeted raises or better lower-band benefits could reduce churn
-3. **Protect R&D's retention practices** — understand what R&D does well (culture, stability, career paths) and see if it transfers to Sales and HR
-4. **Build a tenure-based retention plan** — new employees appear to be the most flight-risk group; a stronger onboarding and early-tenure engagement plan could help
-5. **Don't rely on performance ratings alone for pay equity reviews** — since income is more tied to tenure than current performance, a compensation audit may be worthwhile
+Employee turnover creates recruitment costs, reduces productivity, and affects organisational performance. However, attrition rarely occurs evenly across an organisation.
 
-## Methodology
+This project investigates which employee groups experience higher attrition and identifies patterns that can help HR teams prioritise retention efforts instead of applying broad organisation-wide interventions.
 
-- **PivotTables** across department, salary band, performance rating, gender, marital status, and tenure grouping (New / Mid / Experienced)
-- **PivotCharts** — Salary by Department, Performance vs. Salary, Attrition by Salary Band, Employee Count by Attrition
-- **Slicers** for interactive filtering across the dashboard
-- **Dashboard sheet** consolidating the four core charts into a single view
-- **Insights sheet** documenting the five headline findings directly on the workbook
+---
 
-## Repo Contents
+# Analysis Process
 
-```
+The analysis was completed entirely in Microsoft Excel.
+
+The workflow included:
+
+- Reviewing the dataset for consistency before analysis.
+- Building PivotTables to summarise employee metrics across multiple dimensions.
+- Creating tenure groups (New, Mid, Experienced) for comparison.
+- Designing PivotCharts to communicate trends visually.
+- Combining charts with slicers into an interactive dashboard.
+- Documenting business insights and recommendations based on the analysis.
+
+---
+
+# Key Metrics
+
+- **1,470** employees analysed
+- **237** employees left the company
+- Overall attrition rate: **16.1%**
+- Sales recorded the highest employee attrition
+- Research & Development demonstrated the strongest employee retention
+
+---
+
+# Key Insights
+
+## 1. Sales experiences the highest employee attrition
+
+Sales consistently records the largest proportion of employee departures, suggesting department-specific challenges affecting retention.
+
+## 2. Lower salary bands experience higher turnover
+
+Employees within lower salary bands are more likely to leave the organisation, indicating compensation may contribute to attrition.
+
+## 3. Higher pay alone does not guarantee retention
+
+Although Sales records the highest average monthly income, it also has the highest attrition, suggesting additional factors beyond salary may influence employee decisions.
+
+## 4. Tenure influences both income and attrition
+
+Employees with longer tenure generally earn higher salaries, while newer employees appear more vulnerable to leaving the organisation.
+
+## 5. Marital status shows little relationship with performance
+
+Performance ratings remain relatively consistent across marital status categories, indicating this variable contributes little to explaining performance differences.
+
+---
+
+# Recommendations
+
+Based on these findings, the following actions could improve employee retention:
+
+1. Investigate department-specific causes of attrition within Sales, including workload, management practices, and career progression.
+2. Review compensation strategies for lower salary bands.
+3. Study retention practices within Research & Development and evaluate whether they can be adapted by other departments.
+4. Strengthen onboarding and engagement programmes for newer employees.
+5. Consider reviewing compensation policies to ensure salary progression reflects both tenure and performance.
+
+---
+
+# Skills Demonstrated
+
+- Microsoft Excel
+- PivotTables
+- PivotCharts
+- Interactive Dashboards
+- Slicers
+- HR Analytics
+- Exploratory Data Analysis (EDA)
+- Business Insight Generation
+- Data Storytelling
+
+---
+
+# Repository Structure
+
+```text
 HR-Attrition-Analysis/
 ├── README.md
 ├── images/
-│   └── dashboard_preview.png        # Static preview of the dashboard charts
+│   └── dashboard_preview.png
 └── data/
-    └── HR-Employee-Attrition.xlsx   # Raw data + PivotTables + Dashboard + Insights
+    └── HR-Employee-Attrition.xlsx
 ```
 
-## How to View
+---
 
-Open `data/HR-Employee-Attrition.xlsx` in Excel. The workbook has five sheets:
-- **HR-Employee-Attriti** — raw employee-level data
-- **Pivot Analysis** — underlying PivotTables
-- **Dashboard** — interactive charts with slicers
-- **Insights** — headline findings
-- **working sheet** — supporting calculations
+# How to Use
+
+Open `HR-Employee-Attrition.xlsx` in Microsoft Excel.
+
+The workbook contains:
+
+- **HR-Employee-Attrition** – Raw employee dataset
+- **Pivot Analysis** – Supporting PivotTables
+- **Dashboard** – Interactive dashboard with slicers
+- **Insights** – Summary of key findings
+- **Working Sheet** – Supporting calculations
+
+---
+
+# Business Value
+
+This analysis demonstrates how Excel can be used to transform HR data into actionable insights. By identifying high-risk employee groups and the factors associated with attrition, the dashboard can help HR teams prioritise retention initiatives, monitor workforce trends, and support evidence-based decision-making.
+
