@@ -23,7 +23,7 @@ The goal of this project was to find where attrition is highest and what those e
 
 - **Records:** 1,470 employees
 - **Attributes:** 35 columns covering demographics, job details, pay, performance, and employment history
-- **Source:** [add where you got the dataset]
+- **Source:** Kaggle
 - **Target variable:** Attrition (Yes/No)
 
 Fields used most in this analysis: Department, Job Role, Monthly Income, Performance Rating, Years at Company, and Attrition.
